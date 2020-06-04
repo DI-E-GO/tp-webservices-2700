@@ -1,0 +1,188 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-center" id="tituloCotizacion">
+        <h1>Cotización de divisas</h1>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card d-none d-sm-block">
+        <div class="card-header text-center text-white" id="conversorTable">
+          <h5>Conversor de divisa</h5>
+        </div>
+        <div class="card-body" id="">
+          <div class="table-responsive">
+            <table class="table table-sm text-center">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/153-united-states-of-america.svg" alt=""> USD</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/022-european-union.svg" alt=""> EUR</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/262-united-kingdom.svg" alt="">GBP</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/033-japan.svg" alt="">JPY</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/261-china.svg" alt="">CNY</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/130-australia.svg" alt="">AUD</th>
+                  <th scope="col"><img id="bitcoin" src="./../../../assets/img/bitcoin-logo.jpg" alt="">BTC</th>
+                  <th scope="col"><img id="flag" src="./../../../assets/img/flags/064-argentina.svg" alt="">ARS</th>
+                </tr>
+              </thead>
+              <tbody id="table">
+                <tr>
+                  <th scope="row"><img id="flag" src="./../../../assets/img/flags/153-united-states-of-america.svg" alt=""></th>
+                  <th scope="row">1 USD Inverse</th>
+                  <td>1.000000 1.000000</td>
+                  <td>0.919901 1.087074</td>
+                  <td>0.811469 1.232332</td>
+                  <td>108.9079 0.009182</td>
+                  <td>7.057569 0.141692</td>
+                  <td>1.619886 0.617328</td>
+                  <td>0.000140 7148.757</td>
+                  <td>64.87725 0.015414</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img id="flag" src="./../../../assets/img/flags/022-european-union.svg" alt=""></th>
+                  <th scope="row">1 EUR Inverse</th>
+                  <td>1.087074 0.919901</td>
+                  <td>1.000000 1.000000</td>
+                  <td>0.882127 1.133623</td>
+                  <td>118.3910 0.008447</td>
+                  <td>7.672100 0.130342</td>
+                  <td>1.760936 0.567880</td>
+                  <td>0.000152 6576.146</td>
+                  <td>70.52637 0.014179</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img id="flag" src="./../../../assets/img/flags/262-united-kingdom.svg" alt=""></th>
+                  <th scope="row">1 GBP Inverse</th>
+                  <td>1.232332 0.811469</td>
+                  <td>1.133623 0.882127</td>
+                  <td>1.000000 1.000000</td>
+                  <td>134.2108 0.007451</td>
+                  <td>8.697272 0.114979</td>
+                  <td>1.996238 0.500942</td>
+                  <td>0.000172 5800.997</td>
+                  <td>79.95034 0.012508</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img id="flag" src="./../../../assets/img/flags/228-russia.svg" alt=""></th>
+                  <th scope="row">1 RUB Inverse</th>
+                  <td>1.000000 1.000000</td>
+                  <td>0.919901 1.087074</td>
+                  <td>1.000000 1.000000</td>
+                  <td>0.919901 1.087074</td>
+                  <td>1.000000 1.000000</td>
+                  <td>0.919901 1.087074</td>
+                  <td>1.000000 1.000000</td>
+                  <td>0.919901 1.087074</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header text-center text-white" id="conversorForm">Conversor de divisas</div>
+        <div class="card-body" id="bodyForm">
+          <form>
+            <fieldset>
+              <div class="form-group">
+                <label for="textInput" class="text-white">Cantidad</label>
+                <input name="monto" type="text" id="textInput" class="form-control form-control-sm"
+                  placeholder="Cantidad" [(ngModel)]="valor">
+              </div>
+              <div class="form-group">
+                <label for="select" class="text-white">De</label>
+                <select name="moneda1" id="select" class="form-control form-control-sm" [(ngModel)]="desde">
+                  <option value="USD">USD US Dollar</option>
+                  <option value="ARS">ARS Argentinan Peso</option>
+                  <option value="AUD">AUD Australian Dollar</option>
+                  <option value="BGN">BGN Bulgarian Lev</option>
+                  <option value="BRL">BRL Brazilian Real</option>
+                  <option value="CAD">CAD Canadian Dollar</option>
+                  <option value="CHF">CHF Swiss Franc</option>
+                  <option value="CNY">CNY Chinese Yuan</option>
+                  <option value="CZK">CZK Czech Koruna</option>
+                  <option value="DKK">DKK Danish Krone</option>
+                  <option value="EUR">EUR Euro</option>
+                  <option value="GBP">GBP Pound Sterling</option>
+                  <option value="HKD">HKD Hong Kong Dollar</option>
+                  <option value="HRK">HRK Croatian Kuna</option>
+                  <option value="HUF">HUF Hungarian Forin</option>
+                  <option value="IDR">IDR Indonesian Rupiah</option>
+                  <option value="ILS">ILS Israeli Shekel</option>
+                  <option value="INR">INR Indian Rupee</option>
+                  <option value="ISK">ISK Icelandic Krona</option>
+                  <option value="JPY">JPY Japanese Yen</option>
+                  <option value="KRW">KRW South Korean Won</option>
+                  <option value="MXN">MXN Mexican Peso</option>
+                  <option value="MYR">MYR Malaysian Ringgit</option>
+                  <option value="NOK">NOK Norwegian Krone</option>
+                  <option value="NZD">NZD New Zealand Dollar</option>
+                  <option value="PHP">PHP Philippine Peso</option>
+                  <option value="PLN">PLN Polish Zloty</option>
+                  <option value="RON">RON Romanian Leu</option>
+                  <option value="RUB">RUB Russian Ruble</option>
+                  <option value="SEK">SEK Swedish Krona</option>
+                  <option value="SGD">SGD Singapore Dollar</option>
+                  <option value="THB">THB Thai Baht</option>
+                  <option value="TRY">TRY Turkish Lira</option>
+                  <option value="ZAR">ZAR South African Rand</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select" class="text-white">A</label>
+                <select name="moneda2" id="select" class="form-control form-control-sm" [(ngModel)]="a">
+                  <option value="USD">USD US Dollar</option>
+                  <option value="ARS">ARS Argentinan Peso</option>
+                  <option value="AUD">AUD Australian Dollar</option>
+                  <option value="BGN">BGN Bulgarian Lev</option>
+                  <option value="BRL">BRL Brazilian Real</option>
+                  <option value="CAD">CAD Canadian Dollar</option>
+                  <option value="CHF">CHF Swiss Franc</option>
+                  <option value="CNY">CNY Chinese Yuan</option>
+                  <option value="CZK">CZK Czech Koruna</option>
+                  <option value="DKK">DKK Danish Krone</option>
+                  <option value="EUR">EUR Euro</option>
+                  <option value="GBP">GBP Pound Sterling</option>
+                  <option value="HKD">HKD Hong Kong Dollar</option>
+                  <option value="HRK">HRK Croatian Kuna</option>
+                  <option value="HUF">HUF Hungarian Forin</option>
+                  <option value="IDR">IDR Indonesian Rupiah</option>
+                  <option value="ILS">ILS Israeli Shekel</option>
+                  <option value="INR">INR Indian Rupee</option>
+                  <option value="ISK">ISK Icelandic Krona</option>
+                  <option value="JPY">JPY Japanese Yen</option>
+                  <option value="KRW">KRW South Korean Won</option>
+                  <option value="MXN">MXN Mexican Peso</option>
+                  <option value="MYR">MYR Malaysian Ringgit</option>
+                  <option value="NOK">NOK Norwegian Krone</option>
+                  <option value="NZD">NZD New Zealand Dollar</option>
+                  <option value="PHP">PHP Philippine Peso</option>
+                  <option value="PLN">PLN Polish Zloty</option>
+                  <option value="RON">RON Romanian Leu</option>
+                  <option value="RUB">RUB Russian Ruble</option>
+                  <option value="SEK">SEK Swedish Krona</option>
+                  <option value="SGD">SGD Singapore Dollar</option>
+                  <option value="THB">THB Thai Baht</option>
+                  <option value="TRY">TRY Turkish Lira</option>
+                  <option value="ZAR">ZAR South African Rand</option>
+                </select>
+              </div>
+              <div class="form-group">
+
+                <input class="form-control form-control-sm" type="text" placeholder="{{total}}" readonly>
+              </div>
+              <button type="submit" class="btn btn-warning btn-block" style="color: aliceblue;"
+                (click)="cambiarMoneda()">Convertir</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>

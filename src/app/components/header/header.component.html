@@ -1,0 +1,31 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
+            Angular-Web Service
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item disabled">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['punto-a']" routerLinkActive="router-link-active">Cotización de divisas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['punto-b']" routerLinkActive="router-link-active">Portal de Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['punto-c']" routerLinkActive="router-link-active">Horóscopo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['punto-d']" routerLinkActive="router-link-active">Estadisticas Covid-19</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
